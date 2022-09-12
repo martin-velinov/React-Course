@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto';
+    margin-top: 100px;
+    display: grid;
+    place-items: center;
+}
+#todo{
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+ol li{
+    position:relative;
+    margin: 0px 0px 30px 0px;
+}
+
+ol li span{
+    display: inline;
+    font-size: 20px;
+    transition: 0.3 ease-in-out;
+}
+
+ol li span:before{
+    display: inline-block;
+    content:"";
+    width: 250px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin: auto;
+    transform: scale(0,1);
+    transform-origin:left;
+    transition: 0.3 ease-in-out;
+}
+
+.marked-done span:before{
+    transform: scale(1,1);
+}
+.marked-done span{
+    transform: scale(1,1);
+    color: #a8a8a8;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+.delete,.add,.edit{
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: #b00404;
+    color: #f2f2f2;
+    border: none;
+    padding: 7px;
+    text-transform: uppercase;
+}
+
+input{
+    padding: 10px 0px;
+}
+
+.add{
+    background-color: green;
+    padding: 10px 5px;
+}
+
+.edit{
+    background-color: rgb(198, 198, 0);
+    color: #333;
+}
