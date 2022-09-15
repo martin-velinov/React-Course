@@ -30,7 +30,6 @@ function App() {
     }
   
     setListOfThings([...listOfThings,newObject]);
-    setPerson('');
     
   }
 
